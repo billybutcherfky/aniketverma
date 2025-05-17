@@ -16,10 +16,20 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-body {
-  background: #cbdcf7;
-  font-family: "Poppins", sans-serif;
-}
+body {/* Video Background Styling */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  object-fit: cover;
+  opacity: 100% ; /* Adjust transparency */
+}}
+  
 
 *::selection {
   background: #da2b2b;
@@ -217,16 +227,16 @@ header .navbar ul li a:hover {
   margin-top: 5rem;
   margin-left: 6rem;
   border-radius: 2%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 8px rgba(250, 245, 245, 0.3);
   cursor: pointer;
 }
 .home .image img:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.5);
 }
 .home .content h2 {
   font-size: 5rem;
   font-weight: 800;
-  color: #002057;
+  color: #f498af;
 }
 .home .content h2 span {
   font-size: 5rem;
@@ -235,7 +245,7 @@ header .navbar ul li a:hover {
 }
 .home .content p {
   font-size: 2.5rem;
-  color: #000;
+  color: #e8cdcd;
   font-weight: 600;
   padding: 1rem 0;
 }
